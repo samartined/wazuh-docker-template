@@ -1,6 +1,6 @@
 ---
 # This is the internal user database
-# The hash value is a bcrypt hash and can be generated with plugin/tools/hash.sh
+# The hash value is a bcrypt hash and can be generated with ./plugins/opensearch-security/tools/hash.sh -p <PASSWORD> in index container)
 
 _meta:
   type: "internalusers"
@@ -8,19 +8,19 @@ _meta:
 
 # Define your internal users here
 
-## Demo users
+## users
 
 admin:
-  hash: "$2y$12$K/SpwjtB.wOHJ/Nc6GVRDuc1h0rM1DfvziFRNPtk27P.c4yDr9njO"
+  hash: "$2y$12$MwL/SSFSdaQVxrRrDA3nAu1PxPiDFZGKjrF3BkJuBL2PXPV/G.Yq2"
   reserved: true
   backend_roles:
   - "admin"
-  description: "Demo admin user"
+  description: "admin user"
 
 kibanaserver:
-  hash: "$2a$12$4AcgAt3xwOWadA5s5blL6ev39OXDNhmOesEoo33eZtrq2N0YrU3H."
+  hash: "$2y$12$S7F/lA6HsU3y1Zb1oqd07.VRraIWV6v2t6IL5LmX6vO0nMM8F5wMa"
   reserved: true
-  description: "Demo kibanaserver user"
+  description: "kibanaserver user"
 
 kibanaro:
   hash: "$2a$12$JJSXNfTowz7Uu5ttXfeYpeYE0arACvcwlPBStB1F.MI7f0U9Z4DGC"

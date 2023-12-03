@@ -21,4 +21,7 @@ $ docker compose up
 $ docker compose up -d
 ```
 
+4) Need change passwords in .env and update hash in config/internal_users
+use /plugins/opensearch-security/tools/hash.sh -p <PASSWORD> (inside index container)
+
 The environment takes about 1 minute to get up (depending on your Docker host) for the first time since Wazuh Indexer must be started for the first time and the indexes and index patterns must be generated.
